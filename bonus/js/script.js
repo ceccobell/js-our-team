@@ -2,37 +2,38 @@ let team = [
     {
         nome: "Wayne Barnett",
         ruolo: "Founder & CEO",
-        foto: "wayne-barnett-founder-ceo.jpg"
+        foto: "./img/wayne-barnett-founder-ceo.jpg"
     },
     {
         nome: "Angela Carrol",
         ruolo: "Chief Editor",
-        foto: "angela-caroll-chief-editor.jpg"
+        foto: "./img/angela-caroll-chief-editor.jpg"
     },
     {
         nome: "Walter Gordon",
         ruolo: "Office Manager",
-        foto: "walter-gordon-office-manager.jpg"
+        foto: "./img/walter-gordon-office-manager.jpg"
     },
     {
         nome: "Angela lopez",
         ruolo: "Social Media Manager",
-        foto: "angela-lopez-social-media-manager.jpg"
+        foto: "./img/angela-lopez-social-media-manager.jpg"
     },
     {
         nome: "Scott Estrada",
         ruolo: "Developer",
-        foto: "scott-estrada-developer.jpg"
+        foto: "./img/scott-estrada-developer.jpg"
     },
     {
         nome: "Barbara ramos",
         ruolo: "Graphic Designer",
-        foto: "barbara-ramos-graphic-designer.jpg"
+        foto: "./img/barbara-ramos-graphic-designer.jpg"
     }
 
 ]
 console.log(team)
 
 for (let i = 0; i < team.length; i++) {
-    document.getElementById("team").innerHTML += "<div>" + team[i].nome + ", " + team[i].ruolo + ", " + team[i].foto + "</div>"
+    document.getElementById("team").innerHTML += `<img src="${team[i].foto}" alt="">
+                                                  <div>${team[i].nome}, ${team[i].ruolo}</div>`
 }
