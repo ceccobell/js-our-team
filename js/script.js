@@ -32,3 +32,7 @@ let team = [
 
 ]
 console.log(team)
+
+for (let i = 0; i < team.length; i++) {
+    document.getElementById("team").innerHTML += "<div>" + team[i].nome + ", " + team[i].ruolo + ", " + team[i].foto + "</div>"
+}
